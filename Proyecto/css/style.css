@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* reset */
+* {
+ padding: 0%;
+ margin: 0%;
+ box-sizing: border-box;   
+}
+
+:root {
+    --padding-container: 100px 0;
+    --color--title: #581845;
+}
+/* Main Styling */
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EC7063;
+    color: ghostwhite;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Utility Classes */
+.container {
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.large {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    padding: 13px 20px;
+}
+
+.btn-violet {
+    background: #581845;
+    color: #fff;
+    border: 2px solid #581845;
+    border-radius: 5px;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+form .form-group {
+    margin-bottom: 1rem;
+}
+
+form .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .7rem;
+    font-size: 1rem;
+}
+
+#hero {
+    background-image: url(../img/fondo.jpg);
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+#hero::before{
+    content: " ";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+
+/* Nav */
+#navbar{
+   height: 100%;
+   display: flex;
+   align-items: center;
+    --padding-container: 0;
+}
+
+.nav__title{
+    float: left;
+    width: 30px;
+    height: 10px;
+border-radius: 0%;
+float: right;
+width: 80%;
+    font-size: 2rem;
+    padding-top: 5%;
+    color: #000;
+}
+
+.nav__items{
+    list-style: none;
+}
+
+.nav__link{
+margin-left: left;
+padding: 0;
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: max-content;
+gap: 2em;
+}
+
+.nav_links{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__img{
+    display: block;
+    width: 30px;
+}
+.nav__close{
+    display:  var(--show, none);
+}
+
+/* hero container */
+.hero__container{
+    max-width: 800px;
+    display: grid;
+    --padding-container: 0;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #3e3a52;
+}
+
+.hero__title{
+    font-size: 3rem;
+}
+
+.hero__paragraph{
+    margin-bottom: 20px;
+}
+
+.cta {
+    display: inline-block;
+    justify-self: center;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+/* about */
+.about {
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--color--title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.about__paragraph {
+    line-height: 1.7;
+}
+
+.about__main{
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+
+.about__icons {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 20px;
+    margin: 30px;
+}
+
+.about__icon{
+    width: 300px;
+}
+
+/* Services */
+#services{
+    background-color: #e5e5f7;
+background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+background-size: 20px 20px;
+background-position: 0 0,10px 10px;
+overflow: hidden;
+}
+
+#services {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #000;
+}
+
+#services h4 {
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+.service-box {
+    float: left;
+    width: 50%;
+    padding: 80px;
+}
+
+.service-box img {
+    width: 70px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+/*  testimonial */ 
+#testimonial {
+    background: #3e3a52;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#testimonial h3 {
+    font-size: 2rem;
+    padding-bottom: 100px;
+}
+
+#testimonial p {
+    text-align: center;
+    padding: 10px 120px;
+}
+
+.testimonial-detail {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.testimonial-detail img {
+    float: left;
+    width: 50%;
+}
+    
+.testimonial-detail-img img {
+width: 80px;
+border-radius: 50%;
+padding: 1px;
+float: right;
+}
+
+.testimonial-detail-name {
+    float: right;
+    width: 50%;
+    font-size: 1rem;
+}
+
+.testimonial-detail-name p {
+padding: 12px 20px!important;
+float: right;
+}
+
+/* contacto */
+#contacto {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#contacto h4 {
+text-align: center;
+padding-bottom: 50px;
+}
+
+#contacto form {
+    width: 50%;
+    margin: auto;
+}
+
+#contacto button {
+    width: 100%;
+}
