@@ -7,7 +7,7 @@ Este proyecto consiste en una landing page para una agencia de viajes desarrolla
 - Diseño responsivo y moderno
 - Interfaz de usuario intuitiva
 - Optimizado para SEO
-- Secciones para mostrar destinos destacados, servicios, testimonios y más
+- Secciones para mostrar destinos destacados, servicios y testimonios
 - Formulario de contacto
 
 ## Requisitos previos
